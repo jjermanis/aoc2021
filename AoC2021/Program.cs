@@ -2,13 +2,13 @@
 
 namespace AoC2021
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             int start = Environment.TickCount;
 
-            new Day01().Do();
+            new Day02().Do();
 
             Console.WriteLine($"Time: {Environment.TickCount - start} ms");
         }

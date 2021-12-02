@@ -9,9 +9,7 @@ namespace AoC2021
         private readonly IList<int> _readings;
 
         public Day01(string filename)
-        {
-            _readings = TextFileLines(filename).Select(m => int.Parse(m)).ToList();
-        }
+            => _readings = TextFileIntList(filename);
 
         public Day01() : this("Day01.txt")
         {
@@ -31,14 +29,13 @@ namespace AoC2021
         public int WindowMeasurement()
         {
             var windows = new int[_readings.Count].ToList();
-            for (var i=0; i < _readings.Count; i++)
+            for (var i = 0; i < _readings.Count; i++)
             {
                 var curr = _readings[i];
                 AddToWindow(curr, windows, i);
-                AddToWindow(curr, windows, i-1);
-                AddToWindow(curr, windows, i-2);
+                AddToWindow(curr, windows, i - 1);
+                AddToWindow(curr, windows, i - 2);
             }
-
 
             return AscendingCount(windows);
         }

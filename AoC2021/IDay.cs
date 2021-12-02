@@ -1,6 +1,6 @@
 ﻿namespace AoC2021
 {
-    interface IDay
+    internal interface IDay
     {
         void Do();
     }
