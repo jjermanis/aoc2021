@@ -21,5 +21,13 @@ namespace AoC2021Test
             Assert.AreEqual(1947824, d.ProductSimpleCommands());
             Assert.AreEqual(1813062561, d.ProductCommandsWithAim());
         }
+
+        [TestMethod]
+        public void Day03()
+        {
+            var d = new Day03();
+            Assert.AreEqual(749376, d.PowerConsumption());
+            Assert.AreEqual(2372923, d.LifeSupportRating());
+        }
     }
 }

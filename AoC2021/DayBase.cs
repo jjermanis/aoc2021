@@ -11,6 +11,9 @@ namespace AoC2021
         protected IEnumerable<string> TextFileLines(string fileName)
             => File.ReadLines(FILE_PATH + fileName);
 
+        protected IList<string> TextFileStringList(string fileName)
+            => TextFileLines(fileName).ToList();
+
         protected IEnumerable<int> TextFileInts(string fileName)
             => TextFileLines(fileName).Select(m => int.Parse(m));
 
