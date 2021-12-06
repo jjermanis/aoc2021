@@ -29,5 +29,21 @@ namespace AoC2021Test
             Assert.AreEqual(749376, d.PowerConsumption());
             Assert.AreEqual(2372923, d.LifeSupportRating());
         }
+
+        [TestMethod]
+        public void Day04()
+        {
+            var d = new Day04();
+            Assert.AreEqual(60368, d.FirstWinnerScore());
+            Assert.AreEqual(17435, d.LastWinnerScore());
+        }
+
+        [TestMethod]
+        public void Day05()
+        {
+            var d = new Day05();
+            Assert.AreEqual(4873, d.OrthagonalIntersectingPoints());
+            Assert.AreEqual(19472, d.AllIntersectingPoints());
+        }
     }
 }
