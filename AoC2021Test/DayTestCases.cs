@@ -45,5 +45,21 @@ namespace AoC2021Test
             Assert.AreEqual(4873, d.OrthagonalIntersectingPoints());
             Assert.AreEqual(19472, d.AllIntersectingPoints());
         }
+
+        [TestMethod]
+        public void Day06()
+        {
+            var d = new Day06();
+            Assert.AreEqual(371379, d.PopulationAfter80Days());
+            Assert.AreEqual(1674303997472L, d.PopulationAfter256Days());
+        }
+
+        [TestMethod]
+        public void Day07()
+        {
+            var d = new Day07();
+            Assert.AreEqual(355592, d.Part1());
+            Assert.AreEqual(101618069, d.Part2());
+        }
     }
 }
