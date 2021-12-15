@@ -58,8 +58,16 @@ namespace AoC2021Test
         public void Day07()
         {
             var d = new Day07();
-            Assert.AreEqual(355592, d.Part1());
-            Assert.AreEqual(101618069, d.Part2());
+            Assert.AreEqual(355592, d.SumLinearFuel());
+            Assert.AreEqual(101618069, d.SumGeometricFuel());
+        }
+
+        [TestMethod]
+        public void Day08()
+        {
+            var d = new Day08();
+            Assert.AreEqual(445, d.EasyDigitCount());
+            Assert.AreEqual(1043101, d.OutputSum());
         }
     }
 }

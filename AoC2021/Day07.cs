@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace AoC2021
@@ -17,21 +16,21 @@ namespace AoC2021
 
         public void Do()
         {
-            Console.WriteLine($"{nameof(Part1)}: {Part1()}");
-            Console.WriteLine($"{nameof(Part2)}: {Part2()}");
+            Console.WriteLine($"{nameof(SumLinearFuel)}: {SumLinearFuel()}");
+            Console.WriteLine($"{nameof(SumGeometricFuel)}: {SumGeometricFuel()}");
         }
 
-        public int Part1()
+        public int SumLinearFuel()
         {
             Array.Sort(_positions);
             var medIndex = _positions.Length / 2;
-            var option1 = CalculateLinearFuel(_positions, _positions[medIndex-1]);
-            var option2 = CalculateLinearFuel(_positions, _positions[medIndex-2]);
+            var option1 = CalculateLinearFuel(_positions, _positions[medIndex - 1]);
+            var option2 = CalculateLinearFuel(_positions, _positions[medIndex - 2]);
 
             return Math.Min(option1, option2);
         }
 
-        public int Part2()
+        public int SumGeometricFuel()
         {
             var result = int.MaxValue;
             int index = 0;
