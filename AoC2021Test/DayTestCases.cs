@@ -69,5 +69,13 @@ namespace AoC2021Test
             Assert.AreEqual(445, d.EasyDigitCount());
             Assert.AreEqual(1043101, d.OutputSum());
         }
+
+        [TestMethod]
+        public void Day09()
+        {
+            var d = new Day09();
+            Assert.AreEqual(528, d.RiskLevelSum());
+            Assert.AreEqual(920448, d.BiggestBasinsProduct());
+        }
     }
 }
