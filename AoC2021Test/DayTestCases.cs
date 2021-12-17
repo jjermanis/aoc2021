@@ -77,5 +77,13 @@ namespace AoC2021Test
             Assert.AreEqual(528, d.RiskLevelSum());
             Assert.AreEqual(920448, d.BiggestBasinsProduct());
         }
+
+        [TestMethod]
+        public void Day10()
+        {
+            var d = new Day10();
+            Assert.AreEqual(362271, d.SyntaxErrorScore());
+            Assert.AreEqual(1698395182L, d.CompletionScoreMedian());
+        }
     }
 }
