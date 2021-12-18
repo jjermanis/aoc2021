@@ -9,7 +9,7 @@ namespace AoC2021
         private readonly IDictionary<(int, int), int> _grid;
 
         public Day09(string filename)
-            => _grid = CreateGrid(TextFileStringList(filename));
+            => _grid = TextFileIntGrid(filename);
 
         public Day09() : this("Day09.txt")
         {
@@ -81,22 +81,6 @@ namespace AoC2021
                 return false;
 
             return true;
-        }
-
-        private IDictionary<(int, int), int> CreateGrid(IList<string> lines)
-        {
-            var result = new Dictionary<(int, int), int>();
-            var lineCount = lines.Count;
-            for (int a = 0; a < lineCount; a++)
-            {
-                var currLine = lines[a];
-                var currLen = currLine.Length;
-                for (int b = 0; b < currLen; b++)
-                {
-                    result[(a, b)] = currLine[b] - '0';
-                }
-            }
-            return result;
         }
     }
 }

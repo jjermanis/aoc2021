@@ -25,5 +25,24 @@ namespace AoC2021
 
         protected string TextFile(string fileName)
             => File.ReadAllText(FILE_PATH + fileName);
+
+        protected IDictionary<(int, int), int> TextFileIntGrid(string fileName)
+            => CreateGrid(TextFileStringList(fileName));
+
+        private IDictionary<(int, int), int> CreateGrid(IList<string> lines)
+        {
+            var result = new Dictionary<(int, int), int>();
+            var lineCount = lines.Count;
+            for (int a = 0; a < lineCount; a++)
+            {
+                var currLine = lines[a];
+                var currLen = currLine.Length;
+                for (int b = 0; b < currLen; b++)
+                {
+                    result[(a, b)] = currLine[b] - '0';
+                }
+            }
+            return result;
+        }
     }
 }
