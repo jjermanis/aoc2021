@@ -94,6 +94,23 @@ namespace AoC2021Test
             Assert.AreEqual(320, d.StepCountForSynchronization());
         }
 
+        [TestMethod]
+        public void Day12()
+        {
+            var d = new Day12();
+            Assert.AreEqual(5333, d.SimplePathCount());
+            Assert.AreEqual(146553, d.PathCountWithOneRevisit());
+        }
+
+        [TestMethod]
+        public void Day13()
+        {
+            var d = new Day13();
+            Assert.AreEqual(684, d.FirstFoldDotCount());
+            // This is not the real answer for 13-2. See Day13.Do() for details.
+            Assert.AreEqual(98, d.CompleteInstructions());
+        }
+
         public void DayStarter()
         {
             var d = new DayStarter();

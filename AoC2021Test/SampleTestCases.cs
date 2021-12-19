@@ -45,5 +45,13 @@ namespace AoC2021Test
             Assert.AreEqual(26397, d.SyntaxErrorScore());
             Assert.AreEqual(288957L, d.CompletionScoreMedian());
         }
+
+        [TestMethod]
+        public void Day12()
+        {
+            var d = new Day12("Day12Test.txt");
+            Assert.AreEqual(10, d.SimplePathCount());
+            Assert.AreEqual(36, d.PathCountWithOneRevisit());
+        }
     }
 }

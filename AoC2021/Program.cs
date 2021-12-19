@@ -8,7 +8,7 @@ namespace AoC2021
         {
             int start = Environment.TickCount;
 
-            new Day11().Do();
+            new Day13().Do();
 
             Console.WriteLine($"Time: {Environment.TickCount - start} ms");
         }
