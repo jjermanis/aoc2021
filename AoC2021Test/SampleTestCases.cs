@@ -53,5 +53,13 @@ namespace AoC2021Test
             Assert.AreEqual(10, d.SimplePathCount());
             Assert.AreEqual(36, d.PathCountWithOneRevisit());
         }
+
+        [TestMethod]
+        public void Day14()
+        {
+            var d = new Day14("Day14Test.txt");
+            Assert.AreEqual(1588, d.Part1());
+            Assert.AreEqual(2188189693529, d.Part2());
+        }
     }
 }

@@ -111,6 +111,14 @@ namespace AoC2021Test
             Assert.AreEqual(98, d.CompleteInstructions());
         }
 
+        [TestMethod]
+        public void Day14()
+        {
+            var d = new Day14();
+            Assert.AreEqual(4244, d.Part1());
+            Assert.AreEqual(4807056953866, d.Part2());
+        }
+
         public void DayStarter()
         {
             var d = new DayStarter();
