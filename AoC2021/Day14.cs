@@ -24,14 +24,14 @@ namespace AoC2021
 
         public void Do()
         {
-            Console.WriteLine($"{nameof(Part1)}: {Part1()}");
-            Console.WriteLine($"{nameof(Part2)}: {Part2()}");
+            Console.WriteLine($"{nameof(CommonRangeAfter10Steps)}: {CommonRangeAfter10Steps()}");
+            Console.WriteLine($"{nameof(CommonRangeAfter40Steps)}: {CommonRangeAfter40Steps()}");
         }
 
-        public long Part1()
+        public long CommonRangeAfter10Steps()
             => DifferenceMostLeastCommon(10);
 
-        public long Part2()
+        public long CommonRangeAfter40Steps()
             => DifferenceMostLeastCommon(40);
 
         private long DifferenceMostLeastCommon(int stepCount)
@@ -102,7 +102,7 @@ namespace AoC2021
                         AddPairCount(_startPairCounts, line.Substring(i, 2), 1);
                     }
                     _first = line[0];
-                    _last = line[line.Length - 1];
+                    _last = line[^1];
                     readStart = true;
                 }
                 else

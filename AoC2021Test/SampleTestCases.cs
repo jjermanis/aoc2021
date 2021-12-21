@@ -58,8 +58,16 @@ namespace AoC2021Test
         public void Day14()
         {
             var d = new Day14("Day14Test.txt");
-            Assert.AreEqual(1588, d.Part1());
-            Assert.AreEqual(2188189693529, d.Part2());
+            Assert.AreEqual(1588, d.CommonRangeAfter10Steps());
+            Assert.AreEqual(2188189693529, d.CommonRangeAfter40Steps());
+        }
+
+        [TestMethod]
+        public void Day15()
+        {
+            var d = new Day15("Day15Test.txt");
+            Assert.AreEqual(40, d.MinRiskSmallGrid());
+            Assert.AreEqual(315, d.MinRiskLargeGrid());
         }
     }
 }

@@ -27,9 +27,9 @@ namespace AoC2021
             => File.ReadAllText(FILE_PATH + fileName);
 
         protected IDictionary<(int, int), int> TextFileIntGrid(string fileName)
-            => CreateGrid(TextFileStringList(fileName));
+            => TextFileIntGrid(TextFileStringList(fileName));
 
-        private IDictionary<(int, int), int> CreateGrid(IList<string> lines)
+        protected IDictionary<(int, int), int> TextFileIntGrid(IList<string> lines)
         {
             var result = new Dictionary<(int, int), int>();
             var lineCount = lines.Count;
