@@ -80,5 +80,13 @@ namespace AoC2021Test
             var d3 = new Day16("Day16Test3.txt");
             Assert.AreEqual(23, d3.Part1());
         }
+
+        [TestMethod]
+        public void Day17()
+        {
+            var d = new Day17("Day17Test.txt");
+            Assert.AreEqual(45, d.HighestPosition());
+            Assert.AreEqual(112, d.ValidVelocityCount());
+        }
     }
 }

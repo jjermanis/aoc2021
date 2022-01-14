@@ -135,6 +135,14 @@ namespace AoC2021Test
             Assert.AreEqual(834151779165, d.Part2());
         }
 
+        [TestMethod]
+        public void Day17()
+        {
+            var d = new Day17();
+            Assert.AreEqual(7750, d.HighestPosition());
+            Assert.AreEqual(4120, d.ValidVelocityCount());
+        }
+
         public void DayStarter()
         {
             var d = new DayStarter();
