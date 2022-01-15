@@ -143,6 +143,14 @@ namespace AoC2021Test
             Assert.AreEqual(4120, d.ValidVelocityCount());
         }
 
+        [TestMethod]
+        public void Day18()
+        {
+            var d = new Day18();
+            Assert.AreEqual(3305, d.TotalSumMagnitude());
+            Assert.AreEqual(4563, d.MaxSumMagnitude());
+        }
+
         public void DayStarter()
         {
             var d = new DayStarter();

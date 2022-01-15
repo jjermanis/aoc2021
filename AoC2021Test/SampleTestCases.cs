@@ -88,5 +88,25 @@ namespace AoC2021Test
             Assert.AreEqual(45, d.HighestPosition());
             Assert.AreEqual(112, d.ValidVelocityCount());
         }
+
+        [TestMethod]
+        public void Day18()
+        {
+            var d1 = new Day18("Day18Test1.txt");
+            Assert.AreEqual("[[[[0,7],4],[[7,8],[6,0]]],[8,1]]", d1.SnailfishNumberSum().ToString());
+            var d2 = new Day18("Day18Test2.txt");
+            Assert.AreEqual("[[[[1,1],[2,2]],[3,3]],[4,4]]", d2.SnailfishNumberSum().ToString());
+            var d3 = new Day18("Day18Test3.txt");
+            Assert.AreEqual("[[[[3,0],[5,3]],[4,4]],[5,5]]", d3.SnailfishNumberSum().ToString());
+            var d4 = new Day18("Day18Test4.txt");
+            Assert.AreEqual("[[[[5,0],[7,4]],[5,5]],[6,6]]", d4.SnailfishNumberSum().ToString());
+            var d5 = new Day18("Day18Test5.txt");
+            Assert.AreEqual("[[[[8,7],[7,7]],[[8,6],[7,7]]],[[[0,7],[6,6]],[8,7]]]", d5.SnailfishNumberSum().ToString());
+            var d6 = new Day18("Day18Test6.txt");
+            Assert.AreEqual("[[[[6,6],[7,6]],[[7,7],[7,0]]],[[[7,7],[7,7]],[[7,8],[9,9]]]]", d6.SnailfishNumberSum().ToString());
+            Assert.AreEqual(4140, d6.TotalSumMagnitude());
+            Assert.AreEqual(3993, d6.MaxSumMagnitude());
+
+        }
     }
 }
