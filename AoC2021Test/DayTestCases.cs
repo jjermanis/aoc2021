@@ -151,6 +151,14 @@ namespace AoC2021Test
             Assert.AreEqual(4563, d.MaxSumMagnitude());
         }
 
+        [TestMethod]
+        public void Day20()
+        {
+            var d = new Day20();
+            Assert.AreEqual(4917, d.PixelCountAfter2Rounds());
+            Assert.AreEqual(16389, d.PixelCountAfter50Rounds());
+        }
+
         public void DayStarter()
         {
             var d = new DayStarter();
