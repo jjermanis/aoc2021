@@ -159,6 +159,14 @@ namespace AoC2021Test
             Assert.AreEqual(16389, d.PixelCountAfter50Rounds());
         }
 
+        [TestMethod]
+        public void Day21()
+        {
+            var d = new Day21();
+            Assert.AreEqual(734820, d.DeterministicLoserProduct());
+            Assert.AreEqual(193170338541590, d.DiracWinningUniverseCount());
+        }
+
         public void DayStarter()
         {
             var d = new DayStarter();
