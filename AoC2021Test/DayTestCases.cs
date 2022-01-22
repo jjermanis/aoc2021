@@ -167,6 +167,14 @@ namespace AoC2021Test
             Assert.AreEqual(193170338541590, d.DiracWinningUniverseCount());
         }
 
+        [TestMethod]
+        public void Day22()
+        {
+            var d = new Day22();
+            Assert.AreEqual(615869, d.InitializationProcedureCubeCount());
+            Assert.AreEqual(-1, d.Part2());
+        }
+
         public void DayStarter()
         {
             var d = new DayStarter();
